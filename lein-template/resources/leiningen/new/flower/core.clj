@@ -29,7 +29,7 @@
 
 
 (defn -main []
-  (let [url "https://github.com/PositiveTechnologies/flower"]
+  (let [url "https://github.com/FlowerAutomation/flower"]
     (doto url
       (print-all-opened-tasks)
       (print-all-pull-requests)))

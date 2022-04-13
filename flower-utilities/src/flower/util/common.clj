@@ -1,7 +1,7 @@
 (ns flower.util.common
   (:import [org.jsoup Jsoup]
            [org.jsoup.nodes Document$OutputSettings]
-           [org.jsoup.safety Whitelist]))
+           [org.jsoup.safety Safelist]))
 
 
 (defn strip-html [html]
@@ -14,5 +14,5 @@
                      (.replaceAll "\\\\n" "\n")
                      (.replaceAll "\\r" ""))
                  ""
-                 (Whitelist/none)
+                 (Safelist/none)
                  not-pretty)))

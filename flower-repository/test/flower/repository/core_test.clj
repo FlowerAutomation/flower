@@ -6,11 +6,11 @@
 (test/deftest test-repository-info
   (test/testing "Getting repository info"
     (test/testing "for GitHub"
-      (test/is (= (repository.core/get-repository-info "https://github.com/PositiveTechnologies/flower")
+      (test/is (= (repository.core/get-repository-info "https://github.com/FlowerAutomation/flower")
                   {:repo-type :github
-                   :repo-url "https://github.com/PositiveTechnologies"
+                   :repo-url "https://github.com/FlowerAutomation"
                    :repository-ns nil
-                   :repo-projects ["PositiveTechnologies/flower"]
+                   :repo-projects ["FlowerAutomation/flower"]
                    :repo-name :github-github.com-flower}))
       (test/is (= (repository.core/get-repository-info "https://github.com/example/test")
                   {:repo-type :github

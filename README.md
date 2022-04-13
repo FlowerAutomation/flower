@@ -2,8 +2,8 @@
 
 [![Clojars](https://img.shields.io/clojars/v/flower.svg)](https://clojars.org/flower)
 [![MELPA](https://melpa.org/packages/flower-badge.svg)](https://melpa.org/#/flower)
-[![Travis](https://img.shields.io/travis/PositiveTechnologies/flower.svg)](https://travis-ci.org/PositiveTechnologies/flower)
-[![Dependencies Status](https://versions.deps.co/PositiveTechnologies/flower/status.svg)](https://versions.deps.co/PositiveTechnologies/flower)
+[![Travis](https://img.shields.io/travis/FlowerAutomation/flower.svg)](https://travis-ci.org/FlowerAutomation/flower)
+[![Dependencies Status](https://versions.deps.co/FlowerAutomation/flower/status.svg)](https://versions.deps.co/FlowerAutomation/flower)
 
 Handles all your issue tracking tools and version control systems for you!
 
@@ -32,7 +32,7 @@ If you need separate Python libraries with similar functionality, you may visit
 
 To install, add the following to your project `:dependencies`:
 
-    [flower "0.4.7"]
+    [flower "0.5.0"]
 
 Or use the [Leiningen](https://leiningen.org/) template to build a new application from scratch:
 
@@ -62,7 +62,7 @@ using `flower.macros/without-implicit-cache` macro or call `(function-name-clear
 (require 'flower.tracker.core)
 
 ;; Print all opened tasks in our task tracker
-(let [url "https://github.com/PositiveTechnologies/flower"]
+(let [url "https://github.com/FlowerAutomation/flower"]
   (doall (map (comp (partial apply println)
                     (juxt :task-type :task-id :task-title))
               (.get-tasks (flower.tracker.core/get-tracker url))))
@@ -78,7 +78,7 @@ using `flower.macros/without-implicit-cache` macro or call `(function-name-clear
 ;; * Tracker URL or nil if only query changed
 ;; * Use tracker without auth if nil or with default auth otherwise - see Flower auth
 ;; * Tracker query or nil for default query if applicable
-(setq flower-tracker-queries [("https://github.com/PositiveTechnologies/flower" nil nil)
+(setq flower-tracker-queries [("https://github.com/FlowerAutomation/flower" nil nil)
                               ("https://github.com/melpa/melpa" nil nil)])
 
 (add-hook 'org-mode 'flower-mode)
@@ -94,10 +94,10 @@ Activate `Flower` with:
 
 ### For the patient
 
-1. [Task trackers](https://github.com/PositiveTechnologies/flower/wiki/1.1.-Task-trackers)
-2. [Authentication](https://github.com/PositiveTechnologies/flower/wiki/1.2.-Authentication)
-3. [Repositories](https://github.com/PositiveTechnologies/flower/wiki/1.3.-Repositories)
-4. [Messaging](https://github.com/PositiveTechnologies/flower/wiki/1.4.-Messaging)
+1. [Task trackers](https://github.com/FlowerAutomation/flower/wiki/1.1.-Task-trackers)
+2. [Authentication](https://github.com/FlowerAutomation/flower/wiki/1.2.-Authentication)
+3. [Repositories](https://github.com/FlowerAutomation/flower/wiki/1.3.-Repositories)
+4. [Messaging](https://github.com/FlowerAutomation/flower/wiki/1.4.-Messaging)
 
 ### Videos and articles
 
@@ -107,15 +107,16 @@ Activate `Flower` with:
 
 ## Cookbook
 
-Check out `Flower` recipes in the [Cookbook](https://github.com/PositiveTechnologies/flower/wiki/2.-Cookbook):
+Check out `Flower` recipes in the [Cookbook](https://github.com/FlowerAutomation/flower/wiki/2.-Cookbook):
 
-1. [Emacs](https://github.com/PositiveTechnologies/flower/wiki/2.1.-Emacs)
-2. [Scenarios](https://github.com/PositiveTechnologies/flower/wiki/2.2.-Scenarios)
+1. [Emacs](https://github.com/FlowerAutomation/flower/wiki/2.1.-Emacs)
+2. [Scenarios](https://github.com/FlowerAutomation/flower/wiki/2.2.-Scenarios)
 3. More to be done...
 
 ## License
 
-Copyright © 2017-2020 JSC Positive Technologies. All rights reserved.
+Copyright © 2017-2020 JSC Positive Technologies
+Copyright © 2021-2022 Sergey Sobko <flower@tpg.am>
 
 Distributed under the MIT License. See LICENSE.
 

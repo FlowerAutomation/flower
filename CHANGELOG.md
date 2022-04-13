@@ -1,3 +1,11 @@
+# 0.5.0 - 2022-04-14
+
+- Moved Flower to new home
+- Upgraded dependencies
+- Fixed eGit public repo url
+- Dropped Clojure 1.9 support
+- Modified LICENSE
+
 # 0.4.7 - 2020-10-22
 
 - Fixed Atlassian public repo url

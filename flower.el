@@ -1,12 +1,13 @@
 ;;; flower.el --- Emacs task tracker client. -*- lexical-binding: t -*-
 
-;;; Copyright © 2017-2020 JSC Positive Technologies. All rights reserved.
+;; Copyright (C) 2017-2020 JSC Positive Technologies
+;; Copyright (C) 2021-2022 Sergey Sobko <flower@tpg.am>
 
-;; Author: Sergey Sobko <SSobko@ptsecurity.com>
-;; URL: https://github.com/PositiveTechnologies/flower
+;; Author: Sergey Sobko <flower@tpg.am>
+;; URL: https://github.com/FlowerAutomation/flower
 ;; Keywords: hypermedia, outlines, tools, vc
-;; Version: 0.4.7
-;; Package-Requires: ((emacs "24.4")(clomacs "0.0.3"))
+;; Version: 0.5.0
+;; Package-Requires: ((emacs "24.4")(clomacs "0.0.4"))
 
 ;; This file is not part of GNU Emacs.
 

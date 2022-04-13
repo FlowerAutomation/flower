@@ -1,6 +1,6 @@
-(defproject flower/flower-team "0.4.7"
+(defproject flower/flower-team "0.5.0"
   :description "Flower common utilities"
-  :url "http://github.com/PositiveTechnologies/flower"
+  :url "http://github.com/FlowerAutomation/flower"
   :scm {:dir ".."}
   :license {:name "MIT License"
             :url "https://opensource.org/licenses/MIT"}
@@ -10,7 +10,7 @@
             [lein-bump-version "0.1.6"]]
   :cljfmt {:remove-consecutive-blank-lines? false}
   :aliases {"lint" ["do" ["cljfmt" "check"] ["eastwood"]]
-            "test-all" ["with-profile" "default:+1.9" "test"]
+            "test-all" ["with-profile" "default:+1.10" "test"]
             "lint-and-test-all" ["do" ["lint"] ["test-all"]]}
-  :dependencies [[org.clojure/clojure "1.10.1" :scope "provided"]]
-  :profiles {:1.9 {:dependencies [[org.clojure/clojure "1.9.0"]]}})
+  :dependencies [[org.clojure/clojure "1.11.1" :scope "provided"]]
+  :profiles {:1.10 {:dependencies [[org.clojure/clojure "1.10.1"]]}})

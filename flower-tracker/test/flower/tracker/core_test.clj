@@ -6,11 +6,11 @@
 (test/deftest test-tracker-info
   (test/testing "Getting tracker info"
     (test/testing "for GitHub"
-      (test/is (= (tracker.core/get-tracker-info "https://github.com/PositiveTechnologies/flower")
+      (test/is (= (tracker.core/get-tracker-info "https://github.com/FlowerAutomation/flower")
                   {:tracker-type :github
-                   :tracker-url "https://github.com/PositiveTechnologies"
+                   :tracker-url "https://github.com/FlowerAutomation"
                    :tracker-ns nil
-                   :tracker-projects ["PositiveTechnologies/flower"]
+                   :tracker-projects ["FlowerAutomation/flower"]
                    :tracker-name :github-github.com-flower}))
       (test/is (= (tracker.core/get-tracker-info "https://github.com/example/test")
                   {:tracker-type :github

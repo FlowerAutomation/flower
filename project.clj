@@ -1,6 +1,6 @@
-(defproject flower "0.4.7"
+(defproject flower "0.5.0"
   :description "Flower is a library for integration with task trackers, repositories, messaging systems and more"
-  :url "http://github.com/PositiveTechnologies/flower"
+  :url "http://github.com/FlowerAutomation/flower"
   :license {:name "MIT License"
             :url "https://opensource.org/licenses/MIT"}
   :plugins [[org.clojure/core.unify "0.5.7"]
@@ -8,18 +8,18 @@
             [lein-sub "0.3.0"]
             [lein-ancient "0.6.15" :exclusions [[rewrite-clj]]]
             [lein-bump-version "0.1.6"]]
-  :dependencies [[org.clojure/clojure "1.10.1"]
+  :dependencies [[org.clojure/clojure "1.11.1"]
                  [org.clojure/core.unify "0.5.7"]
-                 [flower/flower-tracker "0.4.7"]
-                 [flower/flower-repository "0.4.7"]
-                 [flower/flower-messaging "0.4.7"]
-                 [flower/flower-team "0.4.7"]
-                 [flower/flower-utilities "0.4.7"]
-                 [flower/flower-integration-default "0.4.7"]
-                 [flower/flower-integration-github "0.4.7"]
-                 [flower/flower-integration-gitlab "0.4.7"]
-                 [flower/flower-integration-jira "0.4.7"]
-                 [flower/flower-integration-tfs "0.4.7"]]
+                 [flower/flower-tracker "0.5.0"]
+                 [flower/flower-repository "0.5.0"]
+                 [flower/flower-messaging "0.5.0"]
+                 [flower/flower-team "0.5.0"]
+                 [flower/flower-utilities "0.5.0"]
+                 [flower/flower-integration-default "0.5.0"]
+                 [flower/flower-integration-github "0.5.0"]
+                 [flower/flower-integration-gitlab "0.5.0"]
+                 [flower/flower-integration-jira "0.5.0"]
+                 [flower/flower-integration-tfs "0.5.0"]]
   :aliases {"test" ["do" ["ancient-all"] ["sub" "lint-and-test-all"]]
             "bump-all" ["do" ["bump-version"] ["sub" "bump-version"]]
             "ancient-all" ["do" ["ancient"] ["sub" "ancient"]]
@@ -39,6 +39,6 @@
         "flower-team"
         "flower-utilities"
         "lein-template"]
-  :profiles {:1.9 {:dependencies [[org.clojure/clojure "1.9.0"]]}
-             :dev {:dependencies [[org.clojure/tools.namespace "1.0.0"]]}})
+  :profiles {:1.10 {:dependencies [[org.clojure/clojure "1.10.1"]]}
+             :dev {:dependencies [[org.clojure/tools.namespace "1.2.0"]]}})
 
