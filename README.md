@@ -2,7 +2,7 @@
 
 [![Clojars](https://img.shields.io/clojars/v/flower.svg)](https://clojars.org/flower)
 [![MELPA](https://melpa.org/packages/flower-badge.svg)](https://melpa.org/#/flower)
-[![Travis](https://img.shields.io/travis/FlowerAutomation/flower.svg)](https://travis-ci.org/FlowerAutomation/flower)
+[![Build Status](https://app.travis-ci.com/FlowerAutomation/flower.svg?branch=master)](https://app.travis-ci.com/FlowerAutomation/flower)
 [![Dependencies Status](https://versions.deps.co/FlowerAutomation/flower/status.svg)](https://versions.deps.co/FlowerAutomation/flower)
 
 Handles all your issue tracking tools and version control systems for you!
@@ -115,7 +115,8 @@ Check out `Flower` recipes in the [Cookbook](https://github.com/FlowerAutomation
 
 ## License
 
-Copyright © 2017-2020 JSC Positive Technologies
+Copyright © 2017-2020 JSC Positive Technologies.
+
 Copyright © 2021-2022 Sergey Sobko <flower@tpg.am>
 
 Distributed under the MIT License. See LICENSE.
