@@ -26,6 +26,7 @@
 
 (require 'clomacs)
 (require 'org)
+(require 'cl-lib)
 
 (clomacs-defun flower-get-task-info
                get-task-info
@@ -194,10 +195,10 @@ Argument QUERY-INDEX Index of the query."
                          (length values)))
          (next-value (aref values index-after)))
     (put 'flower-cycle-query 'state index-after)
-    (when (first next-value)
-      (setq flower-tracker (first next-value))
-      (setq flower-tracker-auth (second next-value)))
-    (setq flower-tracker-query (third next-value))
+    (when (cl-first next-value)
+      (setq flower-tracker (cl-first next-value))
+      (setq flower-tracker-auth (cl-second next-value)))
+    (setq flower-tracker-query (cl-third next-value))
     (message "Flower tracker query set to: %s" next-value)))
 
 ;;;###autoload
